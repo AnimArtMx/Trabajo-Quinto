@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende HTML y CSS - ¡Es Divertido!</title>
+    <link rel="stylesheet" href="Trabajo.Css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="emoji">🚀💻🎨</div>
+            <h1>¡Aprende HTML y CSS!</h1>
+            <p style="font-size: 1.2em;">¡Conviértete en un Creador de Páginas Web!</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress">0%</div>
+        </div>
+
+        <div class="nav-buttons">
+            <button onclick="showLesson(1)">Lección 1: ¿Qué es HTML?</button>
+            <button onclick="showLesson(2)">Lección 2: Etiquetas Básicas</button>
+            <button onclick="showLesson(3)">Lección 3: ¿Qué es CSS?</button>
+            <button onclick="showLesson(4)">Lección 4: Colores y Estilos</button>
+            <button onclick="showLesson(5)">Lección 5: ¡Tu Primera Página!</button>
+        </div>
+
+        <!-- Lección 1 -->
+        <div class="lesson" id="lesson1">
+            <h2>📚 Lección 1: ¿Qué es HTML?</h2>
+            
+            <p><strong>HTML</strong> significa <span class="highlight">Lenguaje de Marcado de HiperTexto</span>. Es como el esqueleto de una página web - ¡le da estructura!</p>
+            
+            <div class="fun-fact">
+                <strong>🎯 Dato Curioso:</strong> HTML fue creado en 1991 por Tim Berners-Lee. ¡Tiene más de 30 años!
+            </div>
+
+            <h3>¿Cómo funciona HTML?</h3>
+            <p>HTML usa <span class="highlight">etiquetas</span> para decirle al navegador qué mostrar. Las etiquetas se escriben entre símbolos de "menor que" y "mayor que":</p>
+
+            <div class="code-box">
+&lt;etiqueta&gt;contenido aquí&lt;/etiqueta&gt;
+            </div>
+
+            <div class="example">
+                <strong>Ejemplo:</strong><br>
+                <code>&lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;</code><br>
+                <p>Esto muestra: <span style="font-size: 2em; font-weight: bold;">¡Hola Mundo!</span></p>
+            </div>
+
+            <div class="try-it">
+                <strong>💡 Para Recordar:</strong>
+                <ul>
+                    <li>Casi todas las etiquetas tienen apertura <span class="tag">&lt;etiqueta&gt;</span> y cierre <span class="tag">&lt;/etiqueta&gt;</span></li>
+                    <li>El contenido va en el medio</li>
+                    <li>HTML no es sensible a mayúsculas, ¡pero es mejor escribir en minúsculas!</li>
+                </ul>
+            </div>
+
+            <!-- EJERCICIO INTERACTIVO 1 -->
+            <div class="interactive-exercise">
+                <h3>🎮 ¡Pruébalo Tú Mismo!</h3>
+                <p>Escribe tu primer código HTML aquí:</p>
+                <textarea class="code-input" id="exercise1" placeholder="Escribe: <h1>Tu mensaje aquí</h1>">
+<h1>¡Hola Mundo!</h1></textarea>
+                <button class="run-btn" onclick="runCode('exercise1', 'output1')">▶ Ver Resultado</button>
+                <div class="output" id="output1"></div>
+            </div>
+
+            <button onclick="completeLesson(1)" class="complete-btn">✓ Completar Lección 1</button>
+        </div>
+
+        <!-- Lección 2 -->
+        <div class="lesson hidden" id="lesson2">
+            <h2>🏷️ Lección 2: Etiquetas Básicas de HTML</h2>
+            
+            <h3>Estructura básica de una página HTML:</h3>
+            <div class="code-box">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ¡Aquí va el contenido!
+  &lt;/body&gt;
+&lt;/html&gt;
+            </div>
+
+            <h3>Etiquetas que debes conocer:</h3>
+            
+            <div class="example">
+                <strong>1. Encabezados (Títulos):</strong>
+                <div class="code-box">
+&lt;h1&gt;Título Grande&lt;/h1&gt;
+&lt;h2&gt;Título Mediano&lt;/h2&gt;
+&lt;h3&gt;Título Pequeño&lt;/h3&gt;
+                </div>
+                <p>Resultado:</p>
+                <h1 style="font-size: 1.8em;">Título Grande</h1>
+                <h2 style="font-size: 1.4em;">Título Mediano</h2>
+                <h3 style="font-size: 1.2em;">Título Pequeño</h3>
+            </div>
+
+            <div class="example">
+                <strong>2. Párrafos:</strong>
+                <div class="code-box">
+&lt;p&gt;Este es un párrafo. Se usa para escribir texto normal.&lt;/p&gt;
+                </div>
+            </div>
+
+            <div class="example">
+                <strong>3. Listas:</strong>
+                <div class="code-box">
+&lt;ul&gt;
+  &lt;li&gt;Primer elemento&lt;/li&gt;
+  &lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;/ul&gt;
+                </div>
+                <p>Resultado:</p>
+                <ul>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                </ul>
+            </div>
+
+            <div class="example">
+                <strong>4. Enlaces:</strong>
+                <div class="code-box">
+&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;
+                </div>
+            </div>
+
+            <div class="example">
+                <strong>5. Imágenes:</strong>
+                <div class="code-box">
+&lt;img src="foto.jpg" alt="Descripción de la imagen"&gt;
+                </div>
+                <p><em>Nota: Esta etiqueta no necesita cierre</em></p>
+            </div>
+
+            <!-- EJERCICIO INTERACTIVO 2 -->
+            <div class="interactive-exercise">
+                <h3>🎮 ¡Tu Turno!</h3>
+                <p>Crea una lista sobre tu animal favorito con título y párrafo:</p>
+                <textarea class="code-input" id="exercise2" placeholder="Usa <h2>, <p> y <ul>">
+<h2>Mi Animal Favorito</h2>
+<p>Me encantan los perros porque son fieles.</p>
+<ul>
+  <li>Son juguetones</li>
+  <li>Son leales</li>
+  <li>Son tiernos</li>
+</ul></textarea>
+                <button class="run-btn" onclick="runCode('exercise2', 'output2')">▶ Ver Resultado</button>
+                <div class="output" id="output2"></div>
+            </div>
+
+            <button onclick="completeLesson(2)" class="complete-btn">✓ Completar Lección 2</button>
+        </div>
+
+        <!-- Lección 3 -->
+        <div class="lesson hidden" id="lesson3">
+            <h2>🎨 Lección 3: ¿Qué es CSS?</h2>
+            
+            <p><strong>CSS</strong> significa <span class="highlight">Hojas de Estilo en Cascada</span>. ¡Es lo que hace que las páginas web se vean bonitas!</p>
+
+            <div class="fun-fact">
+                <strong>🎯 Piensa así:</strong> Si HTML es el esqueleto, CSS es la ropa, el peinado y el maquillaje de tu página web.
+            </div>
+
+            <h3>¿Cómo se escribe CSS?</h3>
+            <p>CSS tiene tres partes: <span class="highlight">selector</span>, <span class="highlight">propiedad</span> y <span class="highlight">valor</span></p>
+
+            <div class="code-box">
+selector {
+  propiedad: valor;
+}
+            </div>
+
+            <div class="example">
+                <strong>Ejemplo:</strong>
+                <div class="code-box">
+p {
+  color: blue;
+  font-size: 20px;
+}
+                </div>
+                <p>Esto hace que todos los párrafos <span class="tag">&lt;p&gt;</span> sean azules y de tamaño 20 píxeles.</p>
+            </div>
+
+            <h3>¿Dónde se pone el CSS?</h3>
+            <p>Puedes poner CSS directamente en las etiquetas con <span class="tag">style=""</span>:</p>
+
+            <div class="code-box">
+&lt;h1 style="color: purple;"&gt;Título Morado&lt;/h1&gt;
+            </div>
+
+            <!-- EJERCICIO INTERACTIVO 3 -->
+            <div class="interactive-exercise">
+                <h3>🎮 ¡Prueba CSS!</h3>
+                <p>Cambia el color y tamaño del texto:</p>
+                <textarea class="code-input" id="exercise3" placeholder="Usa style='...'">
+<h1 style="color: purple;">Título Morado</h1>
+<p style="color: green; font-size: 20px;">Párrafo verde y grande</p></textarea>
+                <button class="run-btn" onclick="runCode('exercise3', 'output3')">▶ Ver Resultado</button>
+                <div class="output" id="output3"></div>
+            </div>
+
+            <div class="try-it">
+                <strong>💡 Recuerda:</strong>
+                <ul>
+                    <li>CSS usa llaves { } para agrupar estilos</li>
+                    <li>Cada propiedad termina con punto y coma ;</li>
+                    <li>¡Puedes dar muchos estilos a la vez!</li>
+                </ul>
+            </div>
+
+            <button onclick="completeLesson(3)" class="complete-btn">✓ Completar Lección 3</button>
+        </div>
+
+        <!-- Lección 4 -->
+        <div class="lesson hidden" id="lesson4">
+            <h2>🌈 Lección 4: Colores y Estilos Divertidos</h2>
+            
+            <h3>1. Colores</h3>
+            <p>Puedes usar nombres de colores en inglés o códigos especiales:</p>
+
+            <div class="example">
+                <div class="code-box">
+h1 {
+  color: red;           /* Color del texto */
+  background-color: yellow;  /* Color de fondo */
+}
+                </div>
+                <div style="color: red; background-color: yellow; padding: 10px; border-radius: 5px; text-align: center;">
+                    <strong>¡Así se ve!</strong>
+                </div>
+            </div>
+
+            <h3>2. Tamaños</h3>
+            <div class="code-box">
+p {
+  font-size: 24px;      /* Tamaño de letra */
+  width: 300px;         /* Ancho */
+  height: 100px;        /* Alto */
+}
+            </div>
+
+            <h3>3. Bordes y Espacios</h3>
+            <div class="example">
+                <div class="code-box">
+div {
+  border: 3px solid blue;  /* Borde */
+  padding: 20px;           /* Espacio interno */
+  margin: 10px;            /* Espacio externo */
+  border-radius: 15px;     /* Esquinas redondeadas */
+}
+                </div>
+                <div style="border: 3px solid blue; padding: 20px; margin: 10px; border-radius: 15px; background: lightblue;">
+                    ¡Mira qué bonito se ve con bordes redondeados!
+                </div>
+            </div>
+
+            <h3>4. Texto</h3>
+            <div class="code-box">
+p {
+  text-align: center;      /* Alineación */
+  font-weight: bold;       /* Negrita */
+  font-style: italic;      /* Cursiva */
+  text-decoration: underline;  /* Subrayado */
+}
+            </div>
+
+            <div class="practice-area">
+                <strong>🎨 Colores Populares:</strong><br>
+                <span style="color: red;">red</span> | 
+                <span style="color: blue;">blue</span> | 
+                <span style="color: green;">green</span> | 
+                <span style="color: orange;">orange</span> | 
+                <span style="color: purple;">purple</span> | 
+                <span style="color: pink;">pink</span> | 
+                <span style="color: brown;">brown</span>
+            </div>
+
+            <!-- EJERCICIO INTERACTIVO 4 -->
+            <div class="interactive-exercise">
+                <h3>🎮 ¡Crea tu Caja Colorida!</h3>
+                <p>Diseña una caja con colores y bordes:</p>
+                <textarea class="code-input" id="exercise4" placeholder="Usa style con border, padding, background-color...">
+<div style="background-color: lightblue; border: 5px solid darkblue; padding: 20px; border-radius: 15px; text-align: center;">
+  <h2 style="color: darkblue;">¡Mi Caja Especial!</h2>
+  <p style="color: navy;">Esto es muy divertido</p>
+</div></textarea>
+                <button class="run-btn" onclick="runCode('exercise4', 'output4')">▶ Ver Resultado</button>
+                <div class="output" id="output4"></div>
+            </div>
+
+            <button onclick="completeLesson(4)" class="complete-btn">✓ Completar Lección 4</button>
+        </div>
+
+        <!-- Lección 5 -->
+        <div class="lesson hidden" id="lesson5">
+            <h2>🎉 Lección 5: ¡Crea Tu Primera Página Completa!</h2>
+            
+            <p>¡Ahora juntemos todo lo que aprendiste! Aquí está el código de una página web completa:</p>
+
+            <div class="code-box" style="font-size: 0.9em;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Mi Página Super Cool&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      background-color: lightblue;
+      font-family: Arial;
+      text-align: center;
+    }
+    
+    h1 {
+      color: darkblue;
+      font-size: 40px;
+    }
+    
+    p {
+      color: navy;
+      font-size: 18px;
+    }
+    
+    .caja {
+      background-color: white;
+      border: 3px solid darkblue;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;¡Bienvenido a Mi Página!&lt;/h1&gt;
+  
+  &lt;div class="caja"&gt;
+    &lt;h2&gt;Sobre Mí&lt;/h2&gt;
+    &lt;p&gt;Me llamo [Tu Nombre] y tengo 10 años.&lt;/p&gt;
+    &lt;p&gt;Me encanta aprender programación.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="caja"&gt;
+    &lt;h2&gt;Mis Pasatiempos&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Jugar videojuegos&lt;/li&gt;
+      &lt;li&gt;Dibujar&lt;/li&gt;
+      &lt;li&gt;Programar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </div>
+
+            <div class="fun-fact">
+                <strong>🚀 Reto Final:</strong> ¡Intenta crear tu propia página! Puedes cambiar los colores, agregar más información, y hacerla única.
+            </div>
+
+            <div class="try-it">
+                <strong>📝 Ideas para tu página:</strong>
+                <ul>
+                    <li>Página sobre tu mascota favorita</li>
+                    <li>Tu superhéroe favorito</li>
+                    <li>Tus videojuegos preferidos</li>
+                    <li>Una receta de cocina</li>
+                    <li>Tu familia</li>
+                </ul>
+            </div>
+
+            <!-- EJERCICIO INTERACTIVO 5 - PROYECTO FINAL -->
+            <div class="interactive-exercise">
+                <h3>🎮 ¡Tu Proyecto Final!</h3>
+                <p>Crea tu propia página web completa sobre tu tema favorito:</p>
+                <textarea class="code-input" id="exercise5" style="height: 300px;" placeholder="Crea tu página completa aquí...">
+<div style="background-color: lightblue; padding: 30px; font-family: Arial;">
+  <h1 style="color: darkblue; text-align: center;">¡Mi Página Super Cool!</h1>
+  
+  <div style="background-color: white; border: 3px solid darkblue; border-radius: 15px; padding: 20px; margin: 20px;">
+    <h2 style="color: darkblue;">Sobre Mí</h2>
+    <p style="color: navy; font-size: 18px;">Me llamo Juan y tengo 10 años.</p>
+    <p style="color: navy; font-size: 18px;">Me encanta aprender programación.</p>
+  </div>
+  
+  <div style="background-color: white; border: 3px solid darkblue; border-radius: 15px; padding: 20px; margin: 20px;">
+    <h2 style="color: darkblue;">Mis Pasatiempos</h2>
+    <ul style="color: navy; font-size: 18px; text-align: left;">
+      <li>Jugar videojuegos</li>
+      <li>Dibujar</li>
+      <li>Programar</li>
+    </ul>
+  </div>
+</div></textarea>
+                <button class="run-btn" onclick="runCode('exercise5', 'output5')">▶ Ver Mi Página</button>
+                <div class="output" id="output5"></div>
+            </div>
+
+            <h3>🎓 ¡Lo que has aprendido!</h3>
+            <div class="practice-area">
+                <strong>✓ Qué es HTML y para qué sirve</strong><br>
+                <strong>✓ Etiquetas básicas: h1, p, ul, li, a, img</strong><br>
+                <strong>✓ Qué es CSS y cómo embellece las páginas</strong><br>
+                <strong>✓ Colores, tamaños y estilos</strong><br>
+                <strong>✓ Cómo crear una página completa</strong>
+            </div>
+
+            <button onclick="completeLesson(5)" class="complete-btn">✓ ¡Terminar el Curso!</button>
+        </div>
+
+        <div class="celebration hidden" id="celebration">
+            🎊🎉🏆🎈✨
+            <h2 style="color: white;">¡FELICIDADES!</h2>
+            <p style="color: white; font-size: 1.2em;">¡Has completado el curso de HTML y CSS!</p>
+            <p style="color: white;">¡Ahora eres un pequeño desarrollador web! 💻🚀</p>
+        </div>
+    </div>
+
+    <script>
+        let completedLessons = 0;
+        const totalLessons = 5;
+
+        function showLesson(lessonNum) {
+            // Ocultar todas las lecciones
+            for (let i = 1; i <= totalLessons; i++) {
+                document.getElementById('lesson' + i).classList.add('hidden');
+            }
+            // Mostrar la lección seleccionada
+            document.getElementById('lesson' + lessonNum).classList.remove('hidden');
+            // Scroll suave hacia arriba
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function completeLesson(lessonNum) {
+            if (completedLessons < lessonNum) {
+                completedLessons = lessonNum;
+                updateProgress();
+            }
+            
+            if (lessonNum < totalLessons) {
+                // Mostrar siguiente lección
+                showLesson(lessonNum + 1);
+            } else {
+                // Mostrar celebración
+                document.getElementById('lesson5').classList.add('hidden');
+                document.getElementById('celebration').classList.remove('hidden');
+                // Crear confeti simple
+                createConfetti();
+            }
+        }
+
+        function updateProgress() {
+            const percentage = (completedLessons / totalLessons) * 100;
+            const progressBar = document.getElementById('progress');
+            progressBar.style.width = percentage + '%';
+            progressBar.textContent = Math.round(percentage) + '% Completado';
+        }
+
+        function createConfetti() {
+            const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4caf50', '#ffc107'];
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '-10px';
+                confetti.style.opacity = '1';
+                confetti.style.borderRadius = '50%';
+                document.body.appendChild(confetti);
+                
+                const fall = confetti.animate([
+                    { transform: 'translateY(0px) rotate(0deg)', opacity: 1 },
+                    { transform: `translateY(${window.innerHeight + 10}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                });
+                
+                fall.onfinish = () => confetti.remove();
+            }
+        }
+
+        // Función para ejecutar el código de los ejercicios
+        function runCode(inputId, outputId) {
+            const code = document.getElementById(inputId).value;
+            const output = document.getElementById(outputId);
+            output.innerHTML = code;
+            output.style.display = 'block';
+        }
+
+        // Mostrar la primera lección al cargar
+        showLesson(1);
+    </script>
+</body>
+</html>
